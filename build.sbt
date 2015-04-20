@@ -1,4 +1,4 @@
-name := "projectv2"
+name := "ai-class"
 
 version := "1.0"
 

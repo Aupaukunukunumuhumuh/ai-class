@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AI-class.iml" filepath="$PROJECT_DIR$/AI-class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ai-class.iml" filepath="$PROJECT_DIR$/ai-class.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ai-class-build.iml" filepath="$PROJECT_DIR$/.idea/modules/ai-class-build.iml" />
     </modules>
   </component>
 </project>

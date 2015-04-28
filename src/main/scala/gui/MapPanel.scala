@@ -3,6 +3,7 @@ package gui
 import java.awt.{Graphics2D, Color, Dimension}
 import java.io.File
 import javax.imageio.ImageIO
+import logic.Cell
 
 import scala.swing.{Swing, Panel}
 
@@ -16,12 +17,10 @@ class MapPanel extends Panel {
 
   val image = new File("./resources/grass.png")
 
-
-  override def paintComponent(g: Graphics2D): Unit = {
-    g.setColor(new Color(0, 255, 0))
-    g.fillRect(0, 0, 800, 400)
-    for(x <- 0 to 20; y <- 0 to 14) {
-      g.drawImage(ImageIO.read(image), x*32, y*32, null)
-    }
+  def drawTile(tile : Cell): Unit = {
+    val image = ImageIO.read(tile.image)
+    val graphics = image.createGraphics()
+    graphics.drawImage(image, tile.x*Cell.CELL_SIZE,
+                        tile.y*Cell.CELL_SIZE, null)
   }
 }

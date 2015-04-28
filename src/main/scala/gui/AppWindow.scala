@@ -14,7 +14,6 @@ object AppWindow extends SimpleSwingApplication {
 
 
   val logTextArea = new LogTextArea
-
   val mapPanel = new MapPanel
 
   def top = new MainFrame {

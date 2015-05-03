@@ -14,14 +14,14 @@ object AppWindow extends SimpleSwingApplication {
 
 
   val logTextArea = new LogTextArea
-  private val mapPanel = new MapPanel
+  val mapPanel = new MapPanel
   val map = new logic.Map(mapPanel)
 
   def top = new MainFrame {
     title = "AI-Class Project"
-    minimumSize = new Dimension(900, 700)
+    minimumSize = new Dimension(1024, 600)
 
-    contents = new GridPanel(2, 1) {
+    contents = new GridPanel(1, 2) {
       contents += mapPanel
       contents += logTextArea
       border = Swing.EmptyBorder(10, 10, 10, 10)

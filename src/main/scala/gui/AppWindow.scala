@@ -14,7 +14,8 @@ object AppWindow extends SimpleSwingApplication {
 
 
   val logTextArea = new LogTextArea
-  val mapPanel = new MapPanel
+  private val mapPanel = new MapPanel
+  val map = new logic.Map(mapPanel)
 
   def top = new MainFrame {
     title = "AI-Class Project"

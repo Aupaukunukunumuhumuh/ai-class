@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f380e56b-b698-40e4-9b87-6dbe70a05723" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/logic/Cell.scala" afterPath="$PROJECT_DIR$/src/main/scala/logic/Cell.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/scala/gui/MapPanel.scala" afterPath="$PROJECT_DIR$/src/main/scala/gui/MapPanel.scala" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/green.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/green2.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AI-class.iws" />
@@ -100,8 +100,8 @@
       <file leaf-file-name="MapPanel.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/gui/MapPanel.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.0">
-              <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+            <state vertical-scroll-proportion="1.1056511">
+              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
               <folding>
                 <element signature="e#13#59#0" expanded="true" />
               </folding>
@@ -697,7 +697,7 @@
       <workItem from="1430669725438" duration="881000" />
       <workItem from="1430670709689" duration="719000" />
       <workItem from="1430671673519" duration="10738000" />
-      <workItem from="1430682945648" duration="164000" />
+      <workItem from="1430682945648" duration="385000" />
     </task>
     <task id="LOCAL-00001" summary="Init project commit">
       <created>1428928873518</created>
@@ -735,11 +735,17 @@
       <option name="project" value="LOCAL" />
       <updated>1430682748488</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Some code cleanup">
+      <created>1430683133665</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1430683133665</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25924000" />
+    <option name="totallyTimeSpent" value="26145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="30" width="1368" height="739" extended-state="6" />
@@ -793,7 +799,8 @@
     <MESSAGE value="Fixed board cells number" />
     <MESSAGE value="Fixed board initialization&#10;" />
     <MESSAGE value="Draws grassed map" />
-    <option name="LAST_COMMIT_MESSAGE" value="Draws grassed map" />
+    <MESSAGE value="Some code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some code cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1187,8 +1194,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/gui/MapPanel.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0">
-          <caret line="27" column="46" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+        <state vertical-scroll-proportion="1.1056511">
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
           <folding>
             <element signature="e#13#59#0" expanded="true" />
           </folding>

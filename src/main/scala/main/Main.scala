@@ -10,6 +10,6 @@ import gui.AppWindow
 object Main {
   def main(args: Array[String]) {
     AppWindow.show()
-    AppWindow.map.printNumbers()
+    AppWindow.map.print()
   }
 }

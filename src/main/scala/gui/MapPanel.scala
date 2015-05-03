@@ -3,7 +3,7 @@ package gui
 import java.awt.{Graphics2D, Color, Dimension}
 import java.io.File
 import javax.imageio.ImageIO
-import logic.Cell
+import logic.{CellObject, Cell}
 
 import scala.swing.{Swing, Panel}
 
@@ -20,7 +20,7 @@ class MapPanel extends Panel {
   def drawTile(tile : Cell): Unit = {
     val image = ImageIO.read(tile.image)
     val graphics = image.createGraphics()
-    graphics.drawImage(image, tile.x*Cell.CELL_SIZE,
-                        tile.y*Cell.CELL_SIZE, null)
+    graphics.drawImage(image, tile.x*CellObject.CELL_SIZE,
+                        tile.y*CellObject.CELL_SIZE, null)
   }
 }

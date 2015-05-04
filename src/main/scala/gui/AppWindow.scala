@@ -4,6 +4,8 @@ import java.awt.Graphics2D
 import java.io.File
 import javax.imageio.ImageIO
 
+import logic.Actor
+
 import scala.swing._
 
 /**
@@ -24,6 +26,7 @@ object AppWindow extends SimpleSwingApplication {
     contents = new GridPanel(1, 2) {
       contents += mapPanel
       contents += logTextArea
+
       border = Swing.EmptyBorder(10, 10, 10, 10)
     }
   }

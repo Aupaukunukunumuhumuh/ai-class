@@ -4,7 +4,7 @@ import java.awt.{Graphics2D, Color, Dimension}
 import java.io.File
 import javax.imageio.ImageIO
 
-import logic.Cell
+import logic.{Actor, Cell}
 
 import scala.swing.{Swing, Panel}
 
@@ -23,11 +23,18 @@ class MapPanel extends Panel {
   override def paintComponent(g: Graphics2D): Unit = {
     //All drawing is done here
     AppWindow.map.board.foreach(_.foreach(drawTile(g, _)))
+    AppWindow.mapPanel.drawActor(g)
   }
 
   private def drawTile(g : Graphics2D, tile : Cell): Unit = {
     val image = ImageIO.read(tile.image)
     g.drawImage(image, tile.x*CELL_SIZE,
       tile.y*CELL_SIZE, null)
+  }
+
+  private def drawActor(g: Graphics2D) : Unit = {
+    val image = ImageIO.read(Actor.ACTOR_FILE)
+    g.drawImage(image, Actor.x*CELL_SIZE,
+      Actor.y*CELL_SIZE, null)
   }
 }

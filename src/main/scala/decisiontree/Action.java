@@ -27,6 +27,7 @@ public enum Action {
             throw new IllegalArgumentException("value is out of range (" + String.valueOf(value) + ")");
         Action action = null;
         int val = (int) value;
+
         switch (val) {
             case 0: action = Action.GET_FUEL; break;
             case 1: action = Action.COLLECT_GARBAGE; break;

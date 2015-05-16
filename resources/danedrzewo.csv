@@ -1,12 +1,4 @@
-@relation danedrzewo
-
-@attribute fuel numeric
-@attribute garbage_weight numeric
-@attribute garbage_size numeric
-@attribute type {NONE,GENERAL,WASTEPAPER,GLASS,PLASTIC}
-@attribute action {GET_FUEL,COLLECT_GARBAGE,COLLECT_GENERAL,COLLECT_WASTEPAPER,COLLECT_GLASS,COLLECT_PLASTIC,RETURN_GARBAGE}
-
-@data
+fuel,garbage_weight,garbage_size,type,action
 20,0,0,NONE,GET_FUEL
 20,0,0,GENERAL,GET_FUEL
 20,0,0,WASTEPAPER,GET_FUEL

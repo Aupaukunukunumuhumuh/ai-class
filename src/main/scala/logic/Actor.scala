@@ -11,8 +11,15 @@ import decisiontree.GarbageType
  */
 
 object Actor{
+  val MIN_FUEL = 0
+  val MAX_FUEL = 100
+  val MIN_GARABGE_SIZE = 0
+  val MAX_GARBAGE_SIZE = 30000
+  val MIN_GARABGE_WEIGHT = 0
+  val MAX_GARBAGE_WEIGHT = 1000
+
   def getDataForDefiningAction: Array[Double] = {
-    return Array[Double](fuel, garbageSize, garbageWeight, garbageType.getValue)
+    return Array[Double](fuel.toDouble, garbageWeight.toDouble, garbageSize.toDouble, garbageType.getValue)
   }
 
   val ACTOR_FILE = new File("./resources/glasses-help2.png")

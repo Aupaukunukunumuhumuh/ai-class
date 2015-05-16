@@ -12,9 +12,9 @@ class DecisionTree {
 }
 
 object DecisionTree {
-  val DATA_FILE = "./resources/danedrzewo.arff"
+  val DATA_FILE = "./resources/danedrzewo.csv"
 
-  private val source = new DataSource(DecisionTree.DATA_FILE)
+  private val source = new DataSource(DATA_FILE)
   private val data = source.getDataSet
   data.setClassIndex(data.numAttributes() - 1)
   private val options = new Array[String](1)
@@ -22,6 +22,7 @@ object DecisionTree {
   private val tree = new J48()
   tree.setOptions(options)
   tree.buildClassifier(data)
+
 
   def findNextMoveForActor() : Action = {
     val instance = new Instance(1.0, Actor.getDataForDefiningAction)

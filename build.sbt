@@ -20,3 +20,4 @@ libraryDependencies := {
 }
 
 libraryDependencies += "org.scalatest" % "scalatest_2.11" % "2.2.4" % "test"
+libraryDependencies += "nz.ac.waikato.cms.weka" % "weka-stable" % "3.6.12"
